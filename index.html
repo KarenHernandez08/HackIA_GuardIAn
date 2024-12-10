@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardIAn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav id="navbar">
+    <div id="logo-container">
+      <img src="images/Icono2.jpg" alt="GuardIAn Logo" id="logo">
+      
+      <span id="app-name">GuardIAn</span>
+    </div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#guias">Guías</a></li>
+      <li><a href="#generador">Generador de contraseñas</a></li>
+      <li><a href="#analizador">Analizador de url</a></li>
+      <li><a href="#contacto">Simulador</a></li>
+      <li><a href="analizador.html">Analizador de mensajes</a></li>
+      <li><a href="sabermas.html">Saber mas</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección de Inicio -->
+  <section id="inicio">
+    <!-- Primera slide -->
+    <div class="slide active">
+      <div class="slide-content">
+        <h1>GuardIAn</h1>
+        <p>La tecnología nos da el poder de proteger a los más vulnerables entre nosotros: nuestros adultos mayores.</p>
+      </div>
+      <img src="images/Icono2.jpg" alt="Imagen de adultos mayores" class="slide-image">
+    </div>
+  
+
+    <!--Segunda slide-->
+    <div class="slide">
+      <div class="slide-content">
+        <h1>GuardIAn</h1>
+        <p>Es una herramienta de confianza, diseñada para salvaguardar los recursos y la tranquilidad de
+           nuestros seres queridos y sus cuidadores.</p>
+      </div>
+      <img src="images/whatsapp.png" alt="Imagen de riesgos cibernéticos" class="slide-image">
+    </div>
+
+    <!--tercera slide-->
+    <div class="slide">
+      <div class="slide-content">
+        <h1>GuardIAn</h1>
+        <p>Nuestra plataforma, impulsada por inteligencia artificial, está diseñada para educar 
+          a los adultos mayores sobre amenazas digitales, ayudándolos a protegerse en línea mientras 
+          desarrollan habilidades digitales de forma accesible e inclusiva.</p>
+      </div>
+      <img src="images/salvar.png" alt="Imagen de riesgos cibernéticos" class="slide-image">
+    </div>
+
+    <!--cuarta slide-->
+    <div class="slide">
+      <div class="slide-content">
+        <h1>Nuestra misión</h1>
+        <p>Proteger a nuestros adultos mayores no es solo una necesidad social, es una oportunidad,
+           <b>GuardIAn</b> esta diseñada para escalar y evolucionar, integrando nuevas funcionalidades que 
+           se adaptan a las demandas del mercado, desde enlaces y mensajes hasta reconocimiento de 
+           voz e imágenes.</p>
+      </div>
+      <img src="images/salvaguardar.png" alt="Imagen de riesgos cibernéticos" class="slide-image">
+    </div>
+  
+    <!-- Indicadores -->
+    <div id="indicators">
+      <span class="indicator active" data-slide="0"></span>
+      <span class="indicator" data-slide="1"></span>
+      <span class="indicator" data-slide="2"></span>
+      <span class="indicator" data-slide="3"></span>
+    </div>
+  </section>
+
+  <!-- Sección de Guías -->
+  <section id="guias">
+    <h2>Guías</h2>
+    <p>Explora nuestras infografías para aprender más sobre cómo protegerte en internet. Haz clic en cualquier imagen para verla en tamaño completo.</p>
+    <div class="gallery">
+      <img src="images/1.jpg" alt="Infografía 1" class="lightbox-trigger">
+      <img src="images/2.jpg" alt="Infografía 2" class="lightbox-trigger">
+      <img src="images/3.jpg" alt="Infografía 3" class="lightbox-trigger">
+      <img src="images/4.jpg" alt="Infografía 4" class="lightbox-trigger">
+      <img src="images/5.jpg" alt="Infografía 5" class="lightbox-trigger">
+      <img src="images/6.jpg" alt="Infografía 6" class="lightbox-trigger">
+      <img src="images/7.jpg" alt="Infografía 7" class="lightbox-trigger">
+      <img src="images/1.jpg" alt="Infografía 8" class="lightbox-trigger">
+    </div>
+  </section>
+
+  <!-- Lightbox para mostrar las imágenes -->
+  <div id="lightbox" class="lightbox">
+    <span id="close-lightbox">X</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Infografía">
+    </div>
+  </div>
+
+  <!-- Sección de Generador de Contraseñas -->
+  <section id="generador">
+    <h2>Generador de Contraseñas</h2>
+    <p>Elige el número de caracteres y genera una contraseña segura.</p>
+    
+    <div class="password-generator">
+      <label for="char-count">Número de caracteres: <span id="char-count-display">12</span></label>
+      <input type="range" id="char-count" min="8" max="20" value="12">
+      
+      <button id="generate-btn">Generar Contraseña</button>
+      <textarea id="password-display" readonly placeholder="Tu contraseña aparecerá aquí"></textarea>
+    </div>
+  </section>
+
+  <!--Sección de revisar url-->
+  <div id="analizador">
+    <h2>Analizador de URL</h2>
+    <p>Pega cualquier enlace en el cuadro de abajo y haz clic en "Consultar" para verificar si la página es segura.</p>
+    <input type="text" id="url-input" placeholder="Introduce la URL aquí">
+    <button id="consultar-btn" onclick="verificarURL()">Consultar</button>
+    <div id="resultado"></div>
+  </div>
+  
+
+  
+  <!-- Sección de Contacto -->
+  <section id="contacto">
+    <div id="analizador">
+      <h2>Simulador de Phishing</h2>
+      <p>Selecciona una categoría de phishing y genera un mensaje simulado.</p>
+  
+      <!-- Selección de categoría -->
+      <select id="categoria">
+        <option value="banco">Correo Bancario Falso</option>
+        <option value="premio">Premio Inesperado</option>
+        <option value="seguridad">Alerta de Seguridad</option>
+        <option value="empleo">Oferta de Trabajo Fraudulenta</option>
+      </select>
+  
+      <!-- Botón de generar mensaje -->
+      <button id="generar-btn">Generar Correo</button>
+  
+      <!-- Mensaje generado -->
+      <div id="mensaje-generado">
+        <p>Selecciona una categoría y haz clic en "Generar Correo".</p>
+      </div>
+  
+      <!-- Nota -->
+      <div class="nota">
+        Este correo solo es para fines educativos y para ayudarte a detectar un mensaje phishing.
+      </div>
+  
+  
+    </div>
+  </section>
+  
+
+
+  <footer id="footer">
+    <p>Desarrollado por <strong>HackIA</strong></p>
+  
+    <!-- Enlaces rápidos -->
+    <div class="footer-links">
+      
+
+      <a href="#inicio">Inicio</a>
+      <a href="#guias">Guías</a>
+      <a href="#generador">Generador de contraseñas
+      <a href="#analizador">Analizador de url</a>
+      <a href="#contacto">Simulador</a>
+      <a href="analizador.html">Analizador de mensajes</a>
+      <a href="sabermas.html">Saber mas</a>
+    </div>
+  
+    <!-- Información de contacto -->
+    <div class="footer-contact">
+      <p>Contacto: <a href="mailto:hackia@correo.com">hackia@correo.com</a></p>
+    </div>
+  
+    <!-- Redes sociales -->
+    <div class="footer-social">
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  
+    <!-- Aviso de copyright -->
+    <div class="footer-copyright">
+      <p>&copy; 2024 HackIA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  
+
+  <script src="script/script.js"></script>
+
+</body>
+</html>

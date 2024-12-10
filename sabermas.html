@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saber Más sobre Fraude - GuardIAn</title>
+  <style>
+  html, body {
+  height: 100%; /* Asegura que el body ocupe toda la altura */
+  margin: 0;
+}
+
+
+/* Estilos generales para la barra de navegación */
+#navbar {
+  position: fixed; /* Hace que el navbar se quede fijo en la parte superior */
+  top: 0; /* Ubica el navbar en la parte superior */
+  left: 0;
+  width: 100%;
+  background-color: #ffff; /* Color de fondo */
+  padding: 10px 20px; /* Espaciado interno */
+  z-index: 1000; /* Asegura que el navbar se superponga sobre otros elementos */
+  display: flex;
+  justify-content: space-between; /* Alinea el logo y los elementos del menú */
+  align-items: center;
+}
+
+/* Logo y nombre de la aplicación */
+#logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 40px; /* Tamaño del logo */
+  height: auto;
+  margin-right: 10px; /* Espaciado entre logo y nombre */
+}
+
+#app-name {
+  color: rgb(17, 17, 18);
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px; /* Tamaño del nombre */
+  font-weight: bold;
+}
+
+/* Estilos para el menú */
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+}
+
+#navbar ul li {
+  margin-left: 20px;
+}
+
+#navbar ul li a {
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+#navbar ul li a:hover {
+  background-color: #003366; /* Color de fondo al pasar el mouse */
+  border-radius: 5px;
+}
+
+/* Añadir algo de espacio en la parte superior de la página para que el contenido no se oculte debajo del navbar */
+body {
+  margin-top: 25px; /* Ajusta según el tamaño de tu navbar */
+}
+
+    body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.category-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  padding: 12px 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.category-btn:hover {
+  background-color: #003366b6;
+}
+
+#resultado {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  display: none;
+}
+
+#resultado h2 {
+  font-size: 30px;
+  color: #003366;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+#mensaje-respuesta {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+#resultado p {
+  color: #003366;
+  font-weight: bold;
+}
+/*estilos para el pie de pagina*/
+#footer {
+  background-color: #003366; /* Fondo azul oscuro */
+  color: #ffffff; /* Texto blanco */
+  text-align: center; /* Centrado */
+  padding: 30px; /* Espaciado interno */
+  font-family: 'Poppins', sans-serif; /* Fuente consistente */
+}
+
+#footer a {
+  color: #00ccff; /* Enlaces en color destacado */
+  text-decoration: none; /* Sin subrayado */
+  margin: 0 10px; /* Espaciado entre enlaces */
+}
+
+#footer a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.footer-links, .footer-contact, .footer-social {
+  margin: 18px 0; /* Espaciado entre secciones */
+}
+
+.footer-social a {
+  margin: 0 10px; /* Espaciado entre iconos */
+}
+
+.footer-copyright {
+  margin-top: 20px; /* Separación del texto final */
+  font-size: 14px; /* Tamaño más pequeño para el copyright */
+  opacity: 0.8; /* Texto más tenue */
+}
+
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo-container">
+      <img src="images/Icono2.jpg" alt="GuardIAn Logo" id="logo">
+      
+      <span id="app-name">GuardIAn</span>
+    </div>
+    <ul>
+      <li><a href="Index.html#inicio">Inicio</a></li>
+      <li><a href="Index.html">Guías</a></li>
+      <li><a href="Index.html#generador">Generador de contraseñas</a></li>
+      <li><a href="Index.html#analizador">Analizador de url</a></li>
+      <li><a href="Index.html#contacto">Simulador</a></li>
+      <li><a href="analizador.html">Analizador de mensajes</a></li>
+      <li><a href="sabermas.html">Saber mas</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+    <h1>Saber Más sobre Fraudes</h1>
+    <div class="category-btns">
+      <button class="category-btn" data-categoria="Phishing">Phishing</button>
+      <button class="category-btn" data-categoria="Robo de identidad">Robo de identidad</button>
+      <button class="category-btn" data-categoria="Fraude en compras en línea">Fraude en compras en línea</button>
+      <button class="category-btn" data-categoria="Estafas de soporte técnico">Estafas de soporte técnico</button>
+      <button class="category-btn" data-categoria="Fraudes financieros">Fraudes financieros</button>
+    </div>
+    <div id="resultado">
+      <h2>Explicación sobre el fraude</h2>
+      <p id="mensaje-respuesta"></p>
+    </div>
+  </div>
+
+
+  <footer id="footer">
+    <p>Desarrollado por <strong>HackIA</strong></p>
+  
+    <!-- Enlaces rápidos -->
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#guias">Guías</a>
+      <a href="#generador">Generador de contraseñas
+      <a href="#analizador">Analizador de url</a>
+      <a href="#contacto">Simulador</a>
+      <a href="analizador.html">Analizador de mensajes</a>
+      <a href="sabermas.html">Saber mas</a>
+    </div>
+  
+    <!-- Información de contacto -->
+    <div class="footer-contact">
+      <p>Contacto: <a href="mailto:hackia@correo.com">hackia@correo.com</a></p>
+    </div>
+  
+    <!-- Redes sociales -->
+    <div class="footer-social">
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  
+    <!-- Aviso de copyright -->
+    <div class="footer-copyright">
+      <p>&copy; 2024 HackIA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Elementos del DOM
+    const categoriaBtns = document.querySelectorAll(".category-btn");
+    const resultadoDiv = document.getElementById("resultado");
+    const mensajeRespuesta = document.getElementById("mensaje-respuesta");
+
+    // Configuración de la API
+    const API_KEY2 = 'AIzaSyCzW6UMG55CdO6MNBerKXYBdJswo9vmLcQ'; // Reemplaza con tu API key de Gemini
+    const API_URL2 = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY2}`;
+
+    // Evento para cada botón de categoría
+    categoriaBtns.forEach(btn => {
+      btn.addEventListener("click", async () => {
+        const categoria = btn.getAttribute("data-categoria");
+
+        // Estructura del prompt
+        const prompt = {
+          "contents": [
+            {
+              "role": "user",
+              "parts": [
+                {
+                  "text": `Actúa como un profesional, tienes que explicar el tema sobre la categoría ${categoria} de forma sencilla, no técnica, porque es para personas que no saben sobre fraudes. El límite es 200 palabras.`
+                }
+              ]
+            }
+          ]
+        };
+
+        // Llamada a la API
+        try {
+          const response = await fetch(API_URL2, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(prompt),
+          });
+
+          const data = await response.json();
+
+          // Extraer el texto del análisis generado por Gemini
+          let mensajeGenerado = data.candidates[0]?.content?.parts[0]?.text || "No se pudo obtener la información.";
+
+          // Eliminar los asteriscos
+          mensajeGenerado = mensajeGenerado.replace(/\*\*/g, '');  // Eliminar los asteriscos '**'
+
+          // Mostrar respuesta en el contenedor
+          mensajeRespuesta.textContent = mensajeGenerado;
+          resultadoDiv.style.display = "block";
+        } catch (error) {
+          console.error("Error al obtener la explicación:", error);
+          mensajeRespuesta.textContent = "Hubo un error al obtener la información. Inténtalo de nuevo más tarde.";
+          resultadoDiv.style.display = "block";
+        }
+      });
+    });
+</script>
+
+</body>
+</html>
+
